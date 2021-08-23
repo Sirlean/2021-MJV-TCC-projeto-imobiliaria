@@ -1,0 +1,62 @@
+<header class="main-header do-sticky" id="main-header-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-lg navbar-light rounded hide-carat">
+                    <a class="navbar-brand logo navbar-brand d-flex w-50 mr-auto"
+                       href="/">
+                        <img src="/assets/img/logo.png" class="logo-img"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars"></span>
+                    </button>
+                    <div class="navbar-collapse collapse w-100" id="navbar">
+                        <ul class="navbar-nav w-100 justify-content-center">
+  
+                            <li class="nav-item" [routerLink]="['/home']" routerLinkActive="active">
+                                <a class="nav-link" href="javascript:void(0);">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="nav-item" [routerLink]="['/empresa']" routerLinkActive="active">
+                                <a class="nav-link" href="javascript:void(0);">
+                                    Empresa
+                                </a>
+                            </li>
+                            <li class="nav-item" [routerLink]="['/localizacao']" routerLinkActive="active">
+                                <a class="nav-link" href="javascript:void(0);">
+                                    Localização
+                                </a>
+                            </li>
+                           
+                            <li class="nav-item" [routerLink]="['/contato']" routerLinkActive="active">
+
+                                <a class="nav-link" href="javascript:void(0);">
+                                    
+                                    Contato
+                                </a>
+
+                                <!--
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                                    <a class="dropdown-item" href="contact-1.html">Contact 1</a>
+                                    <a class="dropdown-item" href="contact-2.html">Contact 2</a>
+                                    <a class="dropdown-item" href="contact-3.html">Contact 3</a>
+                                </div>
+                                -->
+
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+                            <li class="nav-item" [routerLink]="['/cadastro']" routerLinkActive="active">
+                                <a class="open-offcanvas" href="javascript:void(0);">
+                                    <span>Anuncie</span>
+                                    <span class="fa fa-bars"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>

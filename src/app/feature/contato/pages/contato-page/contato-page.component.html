@@ -1,0 +1,76 @@
+<app-banner titulo="FALE CONOSCO"></app-banner>
+
+<div class="container">
+    <div class="main-title">
+        <p>
+            Prezado Cliente nos envie sua mensagem usando os campos abaixo que um representante entrará em contato contigo.
+        </p>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4 col-md-5">
+            <div class="contact-info">
+                <h3>Telefone</h3>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa fa-map-marker"></i>
+                        Av. Municipal, 31    &nbsp;&nbsp;&nbsp;    Jardim Silveira &nbsp;&nbsp;&nbsp;&nbsp;   Barueri-SP    &nbsp;&nbsp;&nbsp;&nbsp;    CEP 06433-000
+                    </li>
+                    <li>
+                        <i class="fa fa-phone"></i>
+                        (11) 9999-9999
+                    </li>
+                    <li style="display:none;">
+                        <i class="mr-3 fa fa-envelope"></i>
+                        info@themevessel.com
+                    </li>
+                </ul>
+                <h3>Redes Sociais</h3>
+                <ul class="social-list clearfix row">
+                    <li class="col-lg-1"><a href="javascript:void(0)" class="facebook"><i class="fa fa-facebook"></i></a></li>
+                    <li class="col-lg-1"><a href="javascript:void(0)" class="twitter"><i class="fa fa-twitter"></i></a></li>
+                    <li class="col-lg-1"><a href="javascript:void(0)" class="google"><i class="fa fa-google-plus"></i></a></li>
+                    <li class="col-lg-1"><a href="javascript:void(0)" class="rss"><i class="fa fa-rss"></i></a></li>
+                    <li class="col-lg-1"><a href="javascript:void(0)" class="linkedin"><i class="fa fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-8 col-md-7">
+            <form id="form1" action="index.html" method="POST" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group name">
+                            <input type="text" id="name" class="form-control" placeholder="Nome" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group email">
+                            <input type="email" id="email" class="form-control" placeholder="Email" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group subject">
+                            <input type="text" id="subject" class="form-control" placeholder="Assunto" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                        <div class="form-group number">
+                            <input type="text" id="phone" class="form-control" placeholder="Telefone" value="">
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="form-group message">
+                            <textarea class="form-control" id="message" placeholder="Escreva aqui sua mensagem"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="send-btn text-center">
+                            <br>
+                            <button type="button" class="btn btn-border btn-md" id="btnsave"(click)='enviarMensagem()'>Enviar Mensagem</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

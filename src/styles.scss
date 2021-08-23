@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+.btn-primary{
+    background-color: #909068;
+    border-color: #424216;
+}
+.btn-primary:hover {
+    background-color: #424216;
+    border-color: #000;
+}
+.btn-primary:active, .btn-primary:start {
+    background-color: #a8a84f;
+    border-color: #000;
+}

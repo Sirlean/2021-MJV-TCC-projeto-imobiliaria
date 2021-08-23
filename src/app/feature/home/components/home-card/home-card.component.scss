@@ -1,0 +1,16 @@
+.card{
+    padding: 40px; 
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.foto{
+    width: 355px; 
+    height: 233px;
+}
+
+@media (min-width: 1200px)
+{
+    .modal-xl {
+        max-width: 1140px;
+    }
+}

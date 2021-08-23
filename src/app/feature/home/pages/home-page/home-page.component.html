@@ -1,0 +1,36 @@
+<app-banner titulo="Silico Imóveis" ></app-banner>
+<div class="container">
+    <div class="d-flex">
+        <div class="card mr-auto p-2">
+            <div class="card-body">
+                <h2>Pesquisa de Imóveis</h2>
+                <h4>O que você procura ?</h4>
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <select class="form-control"  id="tipo_negocio"
+                            required [(ngModel)]="filtro.tipo_negocio"
+                            name="tipo_negocio">
+                            <option *ngFor="let item of lista_tipo_negocio" [value]="item">{{item}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-lg-12">
+                        <select class="form-control"  id="tipo_imovel"
+                            required [(ngModel)]="filtro.tipo_imovel"
+                            name="tipo_imovel">
+                            <option>-</option>
+                            <option *ngFor="let item of lista_tipo_imovel" [value]="item">{{item}}</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-lg-2">
+                        <button class="btn btn-primary" (click)="pesquisar()">Pesquisar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <app-home-lista [lista_imovel]="lista_imovel_filtrada"></app-home-lista>
+</div>

@@ -1,0 +1,377 @@
+<div class="subheader__main">
+    <h2>
+        Cadastre seu Imóvel Abaixo, vamos encontrar um cliente para ele.
+    </h2>
+</div>
+<!-- bloco contato do proprietário (inicio) -->
+<div class="card portlet__body">
+    <div class="card-body">
+
+        <h3>
+            Contato do Proprietário
+        </h3>
+
+        <div class="form-group row">
+            <div class="col-lg-4">
+                <label>Nome:</label>
+                <input type="text" class="form-control" placeholder="" id="proprietario_nome" name="proprietario_nome"
+                    maxlength="70">
+            </div>
+            <div class="col-lg-2">
+                <label class="">Celular:</label>
+                <input type="text" class="form-control" style="display:inline;" id="proprietario_celular"
+                    name="proprietario_celular" maxlength="50" onkeyup="formataCelular(event);">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-3">
+                <label>Email:</label>
+                <div class="input-group">
+                    <div class="input-group-prepend"><span class="input-group-text"><i class="la la-user"></i></span>
+                    </div>
+                    <input type="email" class="form-control" placeholder="email@email.com" id="proprietario_email"
+                        name="proprietario_email" maxlength="70">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- bloco contato do proprietário (fim) -->
+
+<!-- bloco Enderço do Imóvel (inicio) -->
+<div class="card portlet__body">
+    <div class="card-body">
+
+        <h3>
+            Endereço do Imóvel
+        </h3>
+
+        <div class="kt-portlet__body">
+            <div class="form-group row">
+                <div class="col-lg-2">
+                    <label>CEP:</label>
+                    <input type="text" class="form-control" placeholder="" id="endereco_cep" name="endereco_cep"
+                        maxlength="9">
+
+                </div>
+                <div class="col-lg-6">
+                    <label class="">
+                        Endereço:
+                    </label>
+                    <input type="text" class="form-control" placeholder="" id="endereco_imovel" name="endereco_imovel"
+                        maxlength="70">
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-lg-1">
+                    <label class="">Nro:</label>
+                    <input type="text" class="form-control" placeholder="" id="endereco_nro" name="endereco_nro"
+                        maxlength="14">
+                </div>
+                <div class="col-lg-2">
+                    <label class="">Complemento:</label>
+                    <input type="text" class="form-control" placeholder="" id="endereco_compl" name="endereco_compl"
+                        maxlength="70">
+                </div>
+
+                <div class="col-lg-2">
+                    <label>Tipo de Imóvel:</label>
+                    <select class="form-control" id="tipo_imovel" name="tipo_imovel">
+                        <option value="108">
+                            ANDAR CORPORATIVO
+                        </option>
+                        <option value="4">
+                            APARTAMENTO
+                        </option>
+                        <option value="10">
+                            AREA
+                        </option>
+                        <option value="7">
+                            ASSOBRADADO
+                        </option>
+                        <option value="2">
+                            CASA COMERCIAL
+                        </option>
+                        <option value="3">
+                            CASA TERREA
+                        </option>
+                        <option value="105">
+                            CHÁCARA
+                        </option>
+                        <option value="14">
+                            CHACARA / SITIO
+                        </option>
+                        <option value="100">
+                            COBERTURA
+                        </option>
+                        <option value="8">
+                            CONJUNTO
+                        </option>
+                        <option value="11">
+                            ESPAÇO
+                        </option>
+                        <option value="15">
+                            FAZENDA
+                        </option>
+                        <option value="13">
+                            GALPÃO
+                        </option>
+                        <option value="9">
+                            IMOVEL P/ RENDA
+                        </option>
+                        <option value="101">
+                            KITNET
+                        </option>
+                        <option value="102">
+                            LOFT
+                        </option>
+                        <option value="104">
+                            LOJA
+                        </option>
+                        <option value="12">
+                            PREDIO COMERCIAL
+                        </option>
+                        <option value="1">
+                            SALA
+                        </option>
+                        <option value="111">
+                            SALÃO
+                        </option>
+                        <option value="16">
+                            SALÃO COMERCIAL
+                        </option>
+                        <option value="106">
+                            SÍTIO
+                        </option>
+                        <option value="6">
+                            SOBRADO
+                        </option>
+                        <option value="103">
+                            STUDIO
+                        </option>
+                        <option value="5">
+                            TERRENO
+                        </option>
+                    </select>
+                </div>
+                <div class="col-lg-2">
+                    <label class="">Finalidade:</label>
+                    <select class="form-control" id="finalidade" name="finalidade">
+                        <option value="2">
+                            USO COMERCIAL
+                        </option>
+                        <option value="3">
+                            USO INDUSTRIAL
+                        </option>
+                        <option value="1">
+                            USO RESIDENCIAL
+                        </option>
+                        <option value="4">
+                            USO RURAL
+                        </option>
+                    </select>
+                </div>
+                <div class="col-lg-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- bloco Enderço do Imóvel (fim) -->
+
+<!-- bloco Detalhe do Imóvel (inicio) -->
+<div class="card portlet__body">
+    <div class="card-body">
+
+        <h3>
+            Detalhes do Imóvel
+        </h3>
+
+
+        <div class="kt-portlet__body"></div>
+        <div class="form-group row" style="display:none;">
+            <div class="col-lg-2">
+                <label>Tipo de Imóvel:</label>
+                <select class="form-control" id="exampleSelect1">
+                </select>
+                <span class="form-text text-muted">Please enter your full name</span>
+            </div>
+            <div class="col-lg-2">
+                <label class="">Finalidade:</label>
+                <select class="form-control" id="exampleSelect2">
+                    <option>1</option>
+                    <option>2</option>
+                </select>
+                <span class="form-text text-muted">Please enter your email</span>
+            </div>
+            <div class="col-lg-4">
+
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-1">
+                <label class="">Valor Venda:</label>
+                <input type="text" class="form-control" placeholder="" id="valor_venda" name="valor_venda" 
+                   maxlength="14">
+            </div>
+            <div class="col-lg-1">
+                <label class="">Valor Locação:</label>
+                <input type="text" class="form-control" placeholder="" id="valor_locacao" name="valor_locacao"
+                    maxlength="14">
+            </div>
+            <div class="col-lg-1">
+                <label class="">Valor Condomínio:</label>
+                <input type="text" class="form-control" placeholder="" id="valor_condominio" name="valor_condominio"
+                 maxlength="14">
+            </div>
+            <div class="col-lg-1">
+                <label class="">Valor do Iptu:</label>
+                <input type="text" class="form-control" placeholder="" id="valor_iptu" name="valor_iptu"
+                     maxlength="14">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-1">
+                <label class="">Dorms:</label>
+                <div class="kt-input-icon kt-input-icon--right">
+                    <select class="form-control" id="dorms" name="dorms">
+                        <option>-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <label class="">Suítes:</label>
+                <div class="kt-input-icon kt-input-icon--right">
+                    <select class="form-control" id="suites" name="suites">
+                        <option>-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <label class="">Banheiros:</label>
+                <div class="kt-input-icon kt-input-icon--right">
+                    <select class="form-control" id="banheiros" name="banheiros">
+                        <option>-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-lg-1">
+                <label class="">Vagas:</label>
+                <div class="kt-input-icon kt-input-icon--right">
+                    <select class="form-control" id="vagas" name="vagas">
+                        <option>-</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-1">
+                <label class="">Área Cons (m<sup>2</sup>)</label>
+                <input type="text" class="form-control" placeholder="" id="area_cons" name="area_cons"
+                    onkeyup="formataInteiro(event);" maxlength="4">
+            </div>
+            <div class="col-lg-1">
+                <label class="">Área Útil (m<sup>2</sup>)</label>
+                <input type="text" class="form-control" placeholder="" id="area_util" name="area_util"
+                    onkeyup="formataInteiro(event);" maxlength="4">
+            </div>
+            <div class="col-lg-1">
+                <label class="">Área Total (m<sup>2</sup>)</label>
+                <input type="text" class="form-control" placeholder="" id="area_total" name="area_total"
+                    onkeyup="formataInteiro(event);" maxlength="4">
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="col-lg-10">
+                <div class="kt-checkbox-inline">
+                    <label class="kt-checkbox">
+                        <input type="checkbox" id="aceita_financiamento" name="aceita_financiamento" value="1"> Aceita
+                        Financiamento
+                        <span></span>
+                    </label>
+                    <label class="kt-checkbox">
+                        <input type="checkbox" id="aceita_troca" name="aceita_troca" value="1"> Aceita Troca (Permuta)
+                        <span></span>
+                    </label>
+                    <label class="kt-checkbox">
+                        <input type="checkbox" id="mobiliado" name="mobiliado" value="1"> Mobiliado
+                        <span></span>
+                    </label>
+                    <label class="kt-checkbox">
+                        <input type="checkbox" id="condominio_fechado" name="condominio_fechado" value="1"> Em
+                        Condomínio
+                        Fechado
+                        <span></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="form-group row" style="display:block;">
+            <div class="col-lg-8">
+                <label>Condições:</label>
+                <input type="text" class="form-control" placeholder="" id="condicoes" name="condicoes" maxlength="170">
+                <span class="form-text text-muted">Aceita Carro... À Vista... Aceita Troca... etc.</span>
+            </div>
+        </div>
+        <div class="form-group row" style="display:block;">
+            <div class="col-lg-8">
+                <label>Descrição para Anúncio:</label>
+                <textarea class="form-control" id="descricao" name="descricao" rows="7"
+                    style="overflow: hidden; overflow-wrap: break-word; resize: none; height: 177px;"
+                    maxlength="3500"></textarea>
+                <span class="form-text text-muted">
+                    Escreva como você faria o anúncio do seu imóvel, nos dê uma idéia, escreva como se fosse o anúncio,
+                    chegando aqui melhoramos.
+                </span>
+
+            </div>
+        </div>
+    </div>  
+</div>
+ <!-- bloco Detalhe do Imóvel (fim) -->
+
+<!-- bloco Enviar (inicio) -->
+<div class="card portlet__body">
+    <div class="card-body">
+
+        <div class="row">
+            <div class="col-lg-4">
+                <button type="button" class="btn btn-success btn-lg" id="btnenviar">Enviar</button>
+                <!--<img src="/my_img/ajax-loader2.gif" style="margin-left:10px; display:none;" id="myloader">-->
+                <!-- <button type="button" class="btn btn-success btn-lg" style="display:none;">Incluir Fotos</button>-->
+
+                <!--<div style="font-size:medium; color:red;" id="lblerror">-->
+            </div>
+            <div style="font-size:x-large; color:green;" id="lblsuccess">
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- bloco Enviar (fim) -->
